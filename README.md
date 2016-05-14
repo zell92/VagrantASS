@@ -16,7 +16,7 @@ HOW TO INSTALL
 * Download and unzip [this repository](https://github.com/zell92/VagrantASS/archive/master.zip). It contains all Vagrant configurations to build VM.
 * Move with your command line to unzipped directory
 * Run `vagrant up`
-* Test our application [here](http://192.168.33.10:8080/Auto/faces/index.jsp)
+* Test our application [here](http://192.168.33.10:8080/auto/)
 
 
 APPLICATION AUTO
