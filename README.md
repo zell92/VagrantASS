@@ -17,6 +17,7 @@ HOW TO INSTALL
 * Move with your command line to unzipped directory
 * Run `vagrant up` or launch `./startup.bat`
 * Test our application [here](http://192.168.33.10:8080/auto/)
+* At the end, run `vagrant halt` or launch `./shutdown.bat`to close the two virtual machine
 
 
 APPLICATION AUTO
