@@ -1,7 +1,6 @@
 class postgresql{ 
 
 package { 'postgresql':
-#	name => postgresql,
 	ensure => installed
 } ->
 
@@ -24,11 +23,8 @@ package { 'postgresql':
     } ->
 
 	service { 'postgresql':
-#		name => postgresql,
 		ensure => running,
 		enable => true,
-#		hasstatus => true,
-#		require => [Exec["listener"], Exec["connection"] ]
 	} ->
 
  exec { "set_password" : 

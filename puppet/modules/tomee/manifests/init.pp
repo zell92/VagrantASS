@@ -39,8 +39,7 @@ class tomee {
         source => 'puppet:///modules/tomee/postgresql-jdbc4.jar',
     } ->
  
-# fare il redirect della cartella vigrant/webapps con /opt/tomee-1.7.4/webapps (non mi ricordo come funziona per il contenuto e la struttura)
- 
+
  file { '/opt/tomee-1.7.4/webapps/auto.war':
 	require => Exec['unpack-tomee'],
 	target => '/vagrant/webapps/auto.war',
@@ -48,7 +47,10 @@ class tomee {
 	force => true
 	} ->
  
- 
+ exec { "startup" :
+	command => "/bin/echo $'#!/bin/sh -e\n/opt/tomee-1.7.4/bin/startup.sh\nexit 0' > /etc/rc.local"
+	} ->
+	
  service { "tomee" :
     provider => "init",
     ensure => running,
