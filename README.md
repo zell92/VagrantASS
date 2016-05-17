@@ -3,7 +3,7 @@ Vagrant Auto (Progetto Architetture Sistemi Software)
 
 Vagrant project with Tomee and PostgreSQL.
 This is an application to manage a car shop. You can insert cars, and carmaker and analyze all your product.
-We work with two virtual machine, one for web server and a second for database server.
+We work with two virtual machines, one for web server and a second for database server.
 
 
 HOW TO INSTALL
@@ -17,7 +17,7 @@ HOW TO INSTALL
 * Move with your command line to unzipped directory
 * Run `vagrant up` or launch `./startup.bat` to start up the two virtual machines
 * Test our application [here](http://192.168.33.10:8080/auto/)
-* At the end, run `vagrant halt` or launch `./shutdown.bat`to shutdown the two virtual machine
+* At the end, run `vagrant halt` or launch `./shutdown.bat` to shutdown the two virtual machines
 
 
 APPLICATION AUTO
