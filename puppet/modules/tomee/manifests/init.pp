@@ -38,14 +38,28 @@ class tomee {
         group => 'root',
         source => 'puppet:///modules/tomee/postgresql-jdbc4.jar',
     } ->
- 
 
- file { '/opt/tomee-1.7.4/webapps/auto.war':
+	file { "/opt/tomee-1.7.4/lib/javax.ws.rs-api-2.0.1.jar":
+		require => Exec['unpack-tomee'],
+        mode => "0644",
+        owner => 'root',
+        group => 'root',
+        source => 'puppet:///modules/tomee/javax.ws.rs-api-2.0.1.jar',
+    } ->
+
+ file { '/opt/tomee-1.7.4/webapps/Auto.war':
 	require => Exec['unpack-tomee'],
-	target => '/vagrant/webapps/auto.war',
+	target => '/vagrant/webapps/Auto.war',
 	ensure => link,
 	force => true
 	} ->
+file { '/opt/tomee-1.7.4/webapps/AutoRest.war':
+	require => Exec['unpack-tomee'],
+	target => '/vagrant/webapps/AutoRest.war',
+	ensure => link,
+	force => true
+	} ->
+
  
  exec { "startup" :
 	command => "/bin/echo $'#!/bin/sh -e\n/opt/tomee-1.7.4/bin/startup.sh\nexit 0' > /etc/rc.local"
