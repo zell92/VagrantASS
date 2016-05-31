@@ -40,7 +40,7 @@ HOW TO USE APPLICATION AUTO-REST
 * Launch `ClientREST.bat` to test the REST application and work with it.
 	* You **must** download and install cUrl on your windows machine. 
 
-Install cUrl on whindows machine
+Install cUrl on windows machine
 ===========
 1. Download cUrl
 http://winampplugins.co.uk/curl/
