@@ -25,3 +25,17 @@ APPLICATION AUTO
 
 You can find the application used in this project at this link:
 [click here](https://github.com/zell92/Auto)
+
+
+APPLICATION AUTO-REST
+===========
+You can find the application used in this project (REST VERSION) at this link:
+[click here](https://github.com/zell92/AutoRest)
+
+
+HOW TO USE APPLICATION AUTO-REST
+===========
+
+* Run `vagrant up` or launch `./startup.bat` to start up the two virtual machines
+* Launch `ClientREST.bat` to start up the two virtual machines
+	* You **must** download and install cUrl on your windows machine. 
