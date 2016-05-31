@@ -37,5 +37,14 @@ HOW TO USE APPLICATION AUTO-REST
 ===========
 
 * Run `vagrant up` or launch `./startup.bat` to start up the two virtual machines
-* Launch `ClientREST.bat` to start up the two virtual machines
+* Launch `ClientREST.bat` to test the REST application and work with it.
 	* You **must** download and install cUrl on your windows machine. 
+
+Install cUrl on whindows machine
+===========
+1. Download cUrl
+http://winampplugins.co.uk/curl/
+	* choose the correct version for your pc (32-bit or 64-bit)
+
+* Extract all the file in the 7z file inside the same folder
+* Set the path of this folder inside the **PATH** variable of Environment Variables.
